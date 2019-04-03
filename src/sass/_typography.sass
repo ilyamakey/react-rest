@@ -1,0 +1,42 @@
+.h1
+  @extend %secondFontSemiBold
+  +fontSize(30px)
+  @media (min-width: $tablet)
+    +fontSize(42px)
+  @media (min-width: $pc)
+    +fontSize(50px)
+
+.h2
+  @extend %secondFontSemiBold
+  +fontSize(26px)
+  @media (min-width: $tablet)
+    +fontSize(42px)
+
+.h3
+  @extend %secondFontSemiBold
+  +fontSize(22px)
+  @media (min-width: $tablet)
+    +fontSize(26px)
+
+.h4
+  @extend %secondFontSemiBold
+  +fontSize(22px)
+
+.h5
+  @extend %mainFontRegular
+  +fontSize(16px, 22px)
+  @media (min-width: $tablet)
+    +fontSize(18px)
+
+.text
+  max-width: 100%
+  overflow: hidden
+  text-overflow: ellipsis
+  @extend %mainFontRegular
+  +fontSize(14px)
+  +textProp($primaryTextColor)
+
+  //&--md
+  //  +fontSize(16px, 22px)
+  //&--l
+  //  +fontSize(20px)

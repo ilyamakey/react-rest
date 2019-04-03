@@ -1,0 +1,21 @@
+.social
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  &__icon
+    display: block
+    width: 26px
+    height: 26px
+    background-size: cover
+    &--fb
+      background: url("#{$iconsPath}/facebook.svg") no-repeat
+    &--in
+      background: url("#{$iconsPath}/linkedin.svg") no-repeat
+    &--insta
+      background: url("#{$iconsPath}/instagram.svg") no-repeat
+    &--twitter
+      background: url("#{$iconsPath}/twitter.svg") no-repeat
+    &--pinter
+      background: url("#{$iconsPath}/pinterest.svg") no-repeat
+  &__icon + &__icon
+    margin-left: 20px

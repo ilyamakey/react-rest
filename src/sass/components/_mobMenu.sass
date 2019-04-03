@@ -1,0 +1,60 @@
+.mob-menu
+  position: absolute
+  top: 0
+  left: 0
+  min-width: 250px
+  min-height: 566px
+  transition: transform 0.3s ease
+  transform: translateX(-500px)
+  background-color: $backgroundColor
+  z-index: 200
+  @media (min-width: $pc)
+    position: static
+    display: flex
+    min-height: auto
+    min-width: auto
+    align-items: center
+    transform: translateX(0)
+  &--visible
+    transform: translateX(0)
+  &__top
+    display: flex
+    padding: 30px 15px 25px
+    border-bottom: 1px solid $headerBorderColor
+    text-decoration: none
+    @media (min-width: $pc)
+      padding: 0
+      margin-left: 60px
+      order: 2
+      border-bottom: none
+      .card
+        flex-direction: row
+        align-items: center !important
+      .card__img
+        margin-bottom: 0 !important
+      .card__content
+        margin-left: 8px
+        margin-right: 8px
+        align-items: flex-start
+      .card__heading
+        width: auto
+        margin: 0
+        @media (min-width: $pc)
+          +fontSize(14px)
+      .card__email
+        @media (min-width: $pc)
+          +fontSize(12px)
+  .card
+    margin-bottom: 0
+    align-items: flex-start
+    &__img
+      width: 67px
+      margin-bottom: 15px
+    &__heading
+      font-size: 20px
+      font-weight: normal
+      text-align: left
+      color: black
+    &__email
+      font-size: 13px
+

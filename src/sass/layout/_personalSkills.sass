@@ -1,0 +1,81 @@
+.personal-skills
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  &__heading
+    margin-bottom: 30px
+    text-align: center
+    line-height: 32px
+    @media (min-width: $tablet)
+      width: 80%
+      margin-bottom: 26px
+      line-height: 50px
+    @media (min-width: $pc)
+      margin-bottom: 40px
+  &__list
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    @media (min-width: $tablet)
+      width: 85%
+    @media (min-width: $pc)
+      width: 100%
+      flex-direction: row
+      justify-content: space-between
+      align-items: flex-start
+  &__card
+    position: relative
+    margin-bottom: 30px
+    @media (min-width: $tablet)
+      flex-direction: row
+      margin-bottom: 52px
+    @media (min-width: $pc)
+      width: 290px
+      margin-bottom: 0
+      flex-direction: column
+    .card__heading
+      @media (min-width: $tablet)
+        margin-bottom: 5px
+    .card__img
+      position: relative
+    .card__text
+      @media (min-width: $tablet)
+        text-align: left
+    .card__content
+      @media (min-width: $tablet)
+        align-items: flex-start
+    .card__img
+      @media (min-width: $tablet)
+        margin-right: 47px
+    &--html
+      @media (min-width: $tablet)
+        .card__img
+          top: 20px
+          left: 10px
+      @media (min-width: $pc)
+        .card__img
+          margin-bottom: 0
+          top: 0
+    &--css
+      @media (min-width: $tablet)
+        margin-bottom: 40px
+        .card__img
+          top: 8px
+          left: 10px
+      @media (min-width: $pc)
+        margin-bottom: 0
+        .card__img
+          top: 0
+    &--js
+      @media (min-width: $tablet)
+        .card__img
+          top: 10px
+          left: 11px
+      @media (min-width: $pc)
+        margin-bottom: 0
+        .card__img
+          top: 0
+
+

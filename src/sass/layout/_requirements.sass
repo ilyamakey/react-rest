@@ -1,0 +1,68 @@
+.requirements
+  display: flex
+  flex-direction: column
+  padding: 65px 15px
+  justify-content: flex-start
+  align-items: center
+  background: url("#{$imgPath}/bg-2.jpg") no-repeat center $secondaryColor
+  background-size: cover
+  @media (min-width: $tablet)
+    padding: 115px 25px 120px
+    background: url("#{$imgPath}/bg-2-tab.jpg") no-repeat center $secondaryColor
+    background-size: cover
+  @media (min-width: $pc)
+    padding: 120px 40px
+    background: url("#{$imgPath}/bg-2-pc.jpg") no-repeat center $secondaryColor
+    background-size: cover
+  &__content
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    @media (min-width: 768px)
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+  &__heading
+    margin-bottom: 26px
+    text-align: center
+    color: $backgroundColor
+    line-height: 31px
+    @media (min-width: $tablet)
+      width: 60%
+      margin-bottom: 37px
+      line-height: 50px
+    @media (min-width: $pc)
+      width: 80%
+      margin-left: auto
+      margin-right: auto
+  &__img
+    display: flex
+    position: relative
+    width: 256px
+    margin-bottom: 24px
+    flex-shrink: 0
+    align-items: flex-start
+    @media (min-width: 768px)
+      width: 345px
+      order: 2
+      bottom: 10px
+      left: 1px
+    @media (min-width: $pc)
+      width: 420px
+      bottom: 0
+      left: 0
+      margin-bottom: 0
+  &__paragraphs
+    margin-right: 35px
+    @media (min-width: $pc)
+      width: 50%
+  &__text
+    text-align: center
+    color: $backgroundColor
+    @media (min-width: $tablet)
+      font-size: $text-md
+      line-height: 22px
+      text-align: left
+  &__text + &__text
+    margin-top: 22px

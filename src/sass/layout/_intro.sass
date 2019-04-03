@@ -1,0 +1,65 @@
+.intro
+  display: flex
+  flex-direction: column
+  margin-bottom: 67px
+  justify-content: flex-start
+  align-items: center
+  @media (min-width: $tablet)
+    margin-bottom: 135px
+    @media (min-width: $pc)
+      margin-bottom: 120px
+  &__heading
+    margin-bottom: 24px
+    text-align: center
+    @media (min-width: $tablet)
+      margin-bottom: 39px
+  &-info
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    @media (min-width: $tablet)
+      flex-direction: row
+      justify-content: space-between
+    &__img
+      position: relative
+      width: 219px
+      margin-bottom: 25px
+      @media (min-width: $tablet)
+        bottom: 9px
+        left: 1px
+      @media (min-width: $pc)
+        width: 280px
+        margin-bottom: 0
+    &__about
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      @media (min-width: $tablet)
+        margin-left: 30px
+        align-items: flex-start
+      @media (min-width: $pc)
+        margin-left: 50px
+    &__heading
+      width: 90%
+      margin-bottom: 9px
+      text-align: center
+      @media (min-width: $tablet)
+        text-align: left
+    &__text
+      text-align: center
+      @media (min-width: $tablet)
+        text-align: left
+        font-size: $text-md
+        line-height: $lineHeight-md
+    &__text + &__text
+      margin-top: 22px
+    &__btn
+      margin-top: 16px
+      font-size: 22px
+      color: $primaryColor
+      &:hover, &:active
+        color: $primaryBtnHover
+      @media (min-width: $tablet)
+        margin-top: 21px

@@ -1,0 +1,53 @@
+.our-users
+  display: flex
+  flex-direction: column
+  padding: 66px 15px 15px
+  justify-content: flex-start
+  align-items: center
+  @media (min-width: $tablet)
+    padding: 113px 30px
+  @media (min-width: $pc)
+    padding: 120px 40px
+  &__cards
+    display: flex
+    flex-direction: column
+    @media (min-width: 768px)
+      width: 100%
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: flex-start
+      .card
+        width: 200px
+        @media (min-width: $pc)
+          width: 280px
+          flex-direction: row
+          justify-content: flex-start
+          align-items: flex-start
+          text-overflow: ellipsis
+      .card__content
+        @media (min-width: $pc)
+          margin-left: 10px
+          align-items: flex-start
+      .card__heading
+        @media (min-width: $pc)
+          width: 100%
+          text-align: left
+      .card__text
+        @media (min-width: $pc)
+          text-align: left
+  &__heading
+    margin-bottom: 11px
+    text-align: center
+    &--secondary
+      width: 60%
+      margin-bottom: 31px
+      text-align: center
+      @media (min-width: $tablet)
+        margin-bottom: 7px
+  &__btn-load
+    height: 40px
+    padding: 0px 20px 5px
+    margin-top: 22px
+  .card
+    margin-top: 30px

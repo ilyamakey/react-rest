@@ -1,0 +1,40 @@
+.btn
+  display: flex
+  padding: 0
+  border: 0
+  justify-content: center
+  align-items: center
+  background-color: transparent
+  cursor: pointer
+  text-decoration: none
+  @extend %mainFontBold
+
+.btn-main
+  min-width: 290px
+  padding: 10px 20px
+  border-radius: 4px
+  +fontSize(20px)
+  &:disabled
+    border: 2px solid $primaryBtnDisabled
+    background-color: $primaryBtnDisabled
+    color: $disabledText
+    &:hover
+      background-color: $primaryBtnDisabled
+      cursor: auto
+  &--optional
+    border: 2px solid $primaryColor
+    color: $primaryColor
+    &:hover
+      background-color: $primaryBtnHover
+  &--signup
+    min-height: 40px
+    padding: 5px 20px 6px
+    border: 2px solid $primaryColor
+    background-color: $primaryColor
+    color: $backgroundColor
+    &:hover
+      background-color: $primaryBtnHover
+      border: 2px solid $primaryBtnHover
+
+
+

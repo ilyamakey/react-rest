@@ -1,0 +1,16 @@
+.contacts
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  color: $backgroundColor
+  font-size: 18px
+  @media (min-width: $pc)
+    flex-direction: row
+  &__item
+    color: inherit
+  &__item + &__item
+    margin-top: 14px
+    @media (min-width: $pc)
+      margin-top: 0
+      margin-left: 20px
